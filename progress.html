@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Progress</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h2>📚 AI Study Planner</h2>
+
+        <button onclick="window.location.href='index.html'">
+            🏠 Dashboard
+        </button>
+
+    </header>
+
+    <div class="progress-container">
+
+        <h1>📊 Study Progress</h1>
+
+        <div class="progress-box">
+
+            <div class="progress-bar">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+            <h2 id="progressText">0%</h2>
+
+        </div>
+
+        <br>
+
+        <button onclick="increaseProgress()">
+            ➕ Increase Progress
+        </button>
+
+        <button onclick="resetProgress()">
+            🔄 Reset Progress
+        </button>
+
+    </div>
+
+    <script src="progress.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h2>📚 AI Study Planner</h2>
+
+        <button onclick="window.location.href='index.html'">
+            🏠 Dashboard
+        </button>
+
+    </header>
+
+    <div class="planner-container">
+
+        <h1>Add Study Subject</h1>
+
+        <input
+            type="text"
+            id="subject"
+            placeholder="Subject Name">
+
+        <input
+            type="date"
+            id="examDate">
+
+        <select id="difficulty">
+
+            <option value="">Select Difficulty</option>
+
+            <option value="Easy">Easy</option>
+
+            <option value="Medium">Medium</option>
+
+            <option value="Hard">Hard</option>
+
+        </select>
+
+        <button onclick="addSubject()">
+            ➕ Add Subject
+        </button>
+
+        <br><br>
+
+        <button onclick="generateRecommendation()">
+            🤖 Generate AI Recommendation
+        </button>
+
+        <div class="ai-box">
+
+            <h2>AI Suggestion</h2>
+
+            <p id="aiResult">
+                No Recommendation Yet...
+            </p>
+
+        </div>
+
+        <h2>Your Subjects</h2>
+
+        <ul id="subjectList"></ul>
+
+    </div>
+
+    <script src="planner.js"></script>
+    <script src="ai.js"></script>
+
+</body>
+
+</html>
